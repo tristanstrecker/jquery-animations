@@ -7,7 +7,7 @@
 
 // Main text
 $(function(){
-    $('.main-text').hide().fadeIn(4500)
+    $('.main-text').hide().fadeIn(1500)
 })
 
 // Fade in secondary text after main text using delay
@@ -15,7 +15,7 @@ $(function(){
 // FadeTo saves space for the text while fadeIn hides the space
 // initially before expanding as the fade occurs
 $(function(){
-    $('.sub-text').hide().delay(1000).fadeTo(4500, 1)
+    $('.sub-text').hide().delay(1000).fadeTo(1500, 1)
 })
 // Using animate to slide text across the screen and hide to
 // move sub-text up after main text disappears
@@ -43,9 +43,9 @@ $(document).ready(function() {
 $(function() {
     $('#fadeoutin').click(function(){
         if ($('.sub-text').css('opacity') === '0') {
-        $('.sub-text').animate({opacity: '1'}, 4000);
+        $('.sub-text').animate({opacity: '1'}, 1000);
     } else {
-        $('.sub-text').animate({opacity: '0'}, 3000)
+        $('.sub-text').animate({opacity: '0'}, 1000)
     }
 })
 })
@@ -78,38 +78,3 @@ $(function(){
         } else {$('#sizing').animate({height: '100px', width: '100px'}, 450)}
     })
 })
-
-// Pinging without extra plugin
-$(function(){
-        $('button.ping-btn').click(function(){
-            if($('#ping').css('opacity') === '0') {
-                $('div#ping').css({border: "2px solid purple", zIndex: '-1'});
-                $('div#ping').animate({opacity: '0.9'}, 500);
-                $('div#ping').delay(100).animate({opacity: '0'}, 600).promise().then(function(){
-                    $('div#ping').css({border: "2px solid purple", height: '108px', width: '108px', marginLeft: '-10px', marginTop: '-10px'});
-                    $('div#ping').animate({opacity: '0.7'}, 600);
-                    $('div#ping').delay(50).animate({opacity: '0'}, 700).promise().then(function(){
-                        $('div#ping').css({border: "2px solid purple", height: '112px', width: '112px', marginLeft: '-12px', marginTop: '-12px'});
-                        $('div#ping').animate({opacity: '0.4'}, 700);
-                        $('div#ping').delay(25).animate({opacity: '0'}, 800).promise().then(function(){
-                            $('div#ping').css({border: "2px solid purple", height: '108px', width: '108px', marginLeft: '-10px', marginTop: '-10px'});
-                        });
-                });
-            })
-        }
-    })
-})
-
-// var p = 0
-// // Pinging with plugin from https://www.jqueryscript.net/animation/Simple-Pulsating-Circle-Animation-with-jQuery-jPulse-Plugin.html
-// $(function(){
-//     $('#ping').click(function(){
-//         while (p<4) {
-//             if($('#ping').css('opacity') === '0') {
-//                 $('#ping').jPulse({color: '#684f82', speed: 3000, left: -5, top: -5, size: 150, interval: 1000});
-//                 $('#ping').animate({opacity: '0.7'}, 500);
-//                 $('#ping').animate({opacity: '0'}, 600)
-//             } p++
-//         }
-//     })
-// })
