@@ -43,7 +43,7 @@ button.bc {
     height: 110px;
     width: 110px;
     border-radius: 50%;
-    border: 2px solid purple;
+    border: 2px solid rgb(75, 7, 75);
     background-color: purple;
     opacity: 0;
     position: relative;
