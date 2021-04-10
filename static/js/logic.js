@@ -82,25 +82,25 @@ $(function(){
 
 // Ping with background filled
 $(function(){
-    $('button.ping-btn').click(function(){
-        $('div#ping').css({border: "2px solid purple", zIndex: '-1'});
-        $('div#ping').animate({opacity: '0.3', height: '113px', width: '113px', marginLeft: '-12px', marginTop: '-12px'}, 100);
-        $('div#ping').animate({opacity: '0.25', height: '115px', width: '115px', marginLeft: '-13px', marginTop: '-13px'}, 200);
-        $('div#ping').animate({opacity: '0.1', height: '120px', width: '120px', marginLeft: '-15px', marginTop: '-15px'}, 300);
-        $('div#ping').animate({opacity: '0'}, 400).promise().then(function(){$('div#ping').css({border: "2px solid purple", height: '110px', width: '110px', marginLeft: '-11px', marginTop: '-11px'})
+    $('.ping-btn').click(function(){
+        $('#ping').css({border: "2px solid purple", zIndex: '-1'});
+        $('#ping').animate({opacity: '0.3', height: '113px', width: '113px', marginLeft: '-12px', marginTop: '-12px'}, 100);
+        $('#ping').animate({opacity: '0.25', height: '115px', width: '115px', marginLeft: '-13px', marginTop: '-13px'}, 200);
+        $('#ping').animate({opacity: '0.1', height: '120px', width: '120px', marginLeft: '-15px', marginTop: '-15px'}, 300);
+        $('#ping').animate({opacity: '0'}, 400).promise().then(function(){$('#ping').css({border: "2px solid purple", height: '110px', width: '110px', marginLeft: '-11px', marginTop: '-11px'})
         ;})
     })
 })
 
 // Ping with rings
 $(function(){
-    $('button#ring').click(function(){
-        $('div#ping-ring').css({border: "2px solid purple", zIndex: '-1'});
-        $('div#ping-ring').animate({opacity: '0.75', height: '113px', width: '113px', marginLeft: '-12px', marginTop: '-12px'}, 100);
-        $('div#ping-ring').animate({opacity: '0.5', height: '113px', width: '113px', marginLeft: '-12px', marginTop: '-12px'}, 150);
-        $('div#ping-ring').animate({opacity: '0.25', height: '115px', width: '115px', marginLeft: '-13px', marginTop: '-13px'}, 150);
-        $('div#ping-ring').animate({opacity: '0.1', height: '120px', width: '120px', marginLeft: '-15px', marginTop: '-15px'}, 150);
-        $('div#ping-ring').animate({opacity: '0'}, 150).promise().then(function(){$('div#ping-ring').css({border: "2px solid purple", height: '104px', width: '104px', marginLeft: '-8px', marginTop: '-8px'})
+    $('#ring').click(function(){
+        $('#ping-ring').css({border: "2px solid purple", zIndex: '-1'});
+        $('#ping-ring').animate({opacity: '0.75', height: '113px', width: '113px', marginLeft: '-12px', marginTop: '-12px'}, 100);
+        $('#ping-ring').animate({opacity: '0.5', height: '113px', width: '113px', marginLeft: '-12px', marginTop: '-12px'}, 150);
+        $('#ping-ring').animate({opacity: '0.25', height: '115px', width: '115px', marginLeft: '-13px', marginTop: '-13px'}, 150);
+        $('#ping-ring').animate({opacity: '0.1', height: '120px', width: '120px', marginLeft: '-15px', marginTop: '-15px'}, 150);
+        $('#ping-ring').animate({opacity: '0'}, 150).promise().then(function(){$('#ping-ring').css({border: "2px solid purple", height: '104px', width: '104px', marginLeft: '-8px', marginTop: '-8px'})
         ;})
     })
 })
