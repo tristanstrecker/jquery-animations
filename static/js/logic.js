@@ -78,3 +78,15 @@ $(function(){
         } else {$('#sizing').animate({height: '100px', width: '100px'}, 450)}
     })
 })
+
+// Ping
+$(function(){
+    $('button.ping-btn').click(function(){
+        $('div#ping').css({border: "2px solid purple", zIndex: '-1'});
+        $('div#ping').animate({opacity: '0.3', height: '110px', width: '110px', marginLeft: '-11px', marginTop: '-11px'}, 100);
+        $('div#ping').animate({opacity: '0.25', height: '115px', width: '115px', marginLeft: '-13px', marginTop: '-13px'}, 200);
+        $('div#ping').animate({opacity: '0.1', height: '120px', width: '120px', marginLeft: '-15px', marginTop: '-15px'}, 300);
+        $('div#ping').animate({opacity: '0'}, 400);
+        $('div#ping').css({border: "2px solid purple", height: '110px', width: '110px', marginLeft: '-11px', marginTop: '-11px'});
+    })
+})

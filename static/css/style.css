@@ -10,7 +10,15 @@
     padding: 5px
 }
 
-.row>button:hover {
+.container>button{
+    border-color:rgb(0 0 0);
+    border-width: 1px;
+    border-style: solid;
+    background-color:rgb(204, 203, 203);
+    padding: 5px
+}
+
+.container>button:hover {
     background-color: rgb(156, 154, 154);
 }
 
@@ -27,4 +35,41 @@ button.bc {
     width: 100px;
     border-radius: 50%;
     position: relative;
+}
+
+#ping {
+    margin-left: -11px;
+    margin-top: -11px;
+    height: 110px;
+    width: 110px;
+    border-radius: 50%;
+    border: 2px solid purple;
+    background-color: purple;
+    opacity: 0;
+    position: relative;
+}
+
+button.ping-btn {
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color:rgb(204, 203, 203);
+    opacity: 1;
+}
+
+.pm {
+    margin-top: -7rem!important;
+    margin-left: 19.9rem;
+}
+
+.ml-5 {
+    margin-left: 3rem
+}
+
+.justify-content-center2 {
+    justify-content: center!important;
+    margin-left: initial;
 }

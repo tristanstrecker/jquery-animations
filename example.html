@@ -8,7 +8,8 @@
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="static/css/style.css">
-    
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="static/js/logic.js"></script>
     </head>
     <body>
     <div class="container">
@@ -24,12 +25,14 @@
             <button type="button" id="fadeoutin">Fade Out and In Without Moving Buttons</button>
         </div>
         <div class="row">
+            <button class="bc ping-btn" type="button"><div id="ping"></div></button>
+            <div class="row justify-content-center2">Ping Me!</div>
+        </div>
+        <div class="row">
             <button class="bc" type="button" id="drop">Drop Me!</button>
             <button class="bc" type="button" id="bouncing">Bounce Me!</button>
-            <button class="bc" type="button" id="sizing">Resize Me!</button>        
-        </div>
+            <button class="bc" type="button" id="sizing">Resize Me!</button>
+        </div>    
     </div>
-    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-    <script src="static/js/logic.js"></script>
     </body>
 </html>
