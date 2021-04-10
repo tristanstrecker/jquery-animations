@@ -17,6 +17,7 @@ $(function(){
 $(function(){
     $('.sub-text').hide().delay(1000).fadeTo(1500, 1)
 })
+
 // Using animate to slide text across the screen and hide to
 // move sub-text up after main text disappears
 $(document).ready(function() {
