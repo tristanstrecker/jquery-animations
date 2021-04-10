@@ -84,7 +84,7 @@ $(function(){
 $(function(){
     $('button.ping-btn').click(function(){
         $('div#ping').css({border: "2px solid purple", zIndex: '-1'});
-        $('div#ping').animate({opacity: '0.3', height: '110px', width: '110px', marginLeft: '-11px', marginTop: '-11px'}, 100);
+        $('div#ping').animate({opacity: '0.3', height: '113px', width: '113px', marginLeft: '-12px', marginTop: '-12px'}, 100);
         $('div#ping').animate({opacity: '0.25', height: '115px', width: '115px', marginLeft: '-13px', marginTop: '-13px'}, 200);
         $('div#ping').animate({opacity: '0.1', height: '120px', width: '120px', marginLeft: '-15px', marginTop: '-15px'}, 300);
         $('div#ping').animate({opacity: '0'}, 400).promise().then(function(){$('div#ping').css({border: "2px solid rgb(75, 7, 75)", height: '110px', width: '110px', marginLeft: '-11px', marginTop: '-11px'});})
