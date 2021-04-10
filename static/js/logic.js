@@ -95,11 +95,11 @@ $(function(){
 // Ping with rings
 $(function(){
     $('#ring').click(function(){
-        $('#ping-ring').css({border: "2px solid purple", zIndex: '-1'});
+        // $('#ping-ring').css({border: "2px solid purple", zIndex: '-1'});
         $('#ping-ring').animate({opacity: '0.75', height: '113px', width: '113px', marginLeft: '-12px', marginTop: '-12px'}, 100);
-        $('#ping-ring').animate({opacity: '0.5', height: '113px', width: '113px', marginLeft: '-12px', marginTop: '-12px'}, 150);
-        $('#ping-ring').animate({opacity: '0.25', height: '115px', width: '115px', marginLeft: '-13px', marginTop: '-13px'}, 150);
-        $('#ping-ring').animate({opacity: '0.1', height: '120px', width: '120px', marginLeft: '-15px', marginTop: '-15px'}, 150);
+        $('#ping-ring').animate({opacity: '0.5', height: '113px', width: '113px', marginLeft: '-12px', marginTop: '-12px', borderTopColor: "blue", borderLeftColor: "blue", borderRightColor: "blue", borderBottomColor: "blue"}, 150);
+        $('#ping-ring').animate({opacity: '0.25', height: '115px', width: '115px', marginLeft: '-13px', marginTop: '-13px', borderTopColor: "green", borderLeftColor: "green", borderRightColor: "green", borderBottomColor: "green"}, 150);
+        $('#ping-ring').animate({opacity: '0.1', height: '120px', width: '120px', marginLeft: '-15px', marginTop: '-15px', borderTopColor: "red", borderLeftColor: "red", borderRightColor: "red", borderBottomColor: "red"}, 150);
         $('#ping-ring').animate({opacity: '0'}, 150).promise().then(function(){$('#ping-ring').css({border: "2px solid purple", height: '104px', width: '104px', marginLeft: '-8px', marginTop: '-8px'})
         ;})
     })
