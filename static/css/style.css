@@ -49,15 +49,16 @@ button.bc {
     position: relative;
 }
 
-button.ping-btn {
-    border-width: 1px;
-    border-style: solid;
-    border-color: black;
-    height: 100px;
-    width: 100px;
+#ping-ring {
+    margin-left: -8px;
+    margin-top: -8px;
+    height: 104px;
+    width: 104px;
     border-radius: 50%;
-    background-color:rgb(204, 203, 203);
-    opacity: 1;
+    border: 2px solid purple;
+    /* background-color: purple; */
+    opacity: 0;
+    position: relative;
 }
 
 .pm {
